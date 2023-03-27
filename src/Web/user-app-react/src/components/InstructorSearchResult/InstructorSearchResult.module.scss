@@ -1,0 +1,27 @@
+.items-list {
+    list-style-type: none;
+    max-height: 600px;
+    width: 100%;
+    overflow: auto;
+
+    .item {
+        cursor: pointer;
+        padding-bottom: 16px;
+
+        .itemContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .itemType {
+                display: flex;
+                flex-direction: row;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .item:hover {
+        color: #c677fc;
+    }
+}

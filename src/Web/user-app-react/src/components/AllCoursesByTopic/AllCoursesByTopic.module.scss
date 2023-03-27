@@ -1,0 +1,49 @@
+.container {
+    .courseCard {
+        box-shadow: 0 1rem 1rem hsl(0 0% 0% / 10%);
+        padding: 10px;
+        display: flex;
+        gap: 24px;
+        // align-items: baseline;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(21px);
+        border-radius: 12px;
+
+        .imageCourse {
+            width: 170px;
+            height: 140px;
+            border-radius: 12px;
+        }
+
+        .child {
+            flex-grow: 1;
+        }
+
+        .childThree {
+            flex-grow: 3;
+        }
+
+        .rating {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .tier {
+            width: 60px;
+            align-self: center;
+            .badge {
+                padding: 8px;
+            }
+        }
+    }
+
+    .courseCard:hover {
+        box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
+        cursor: pointer;
+    }
+}

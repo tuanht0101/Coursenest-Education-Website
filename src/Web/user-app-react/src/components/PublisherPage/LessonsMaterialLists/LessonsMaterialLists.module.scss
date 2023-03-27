@@ -1,0 +1,103 @@
+.wrapper {
+    // height: 100%;
+    overflow-y: scroll;
+
+    .itemDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // margin-top: -14px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        .itemTitle {
+            transform: translateY(25%);
+        }
+
+        .itemAction {
+            display: flex;
+            align-items: center;
+
+            .btnAction {
+                cursor: pointer;
+                margin-right: 16px;
+                color: rgba(140, 140, 140, 1);
+                margin-top: 0;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            .itemOrder {
+                padding: 8px;
+                border: 1px solid;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+
+            .moveBtnContainer {
+                display: flex;
+                flex-direction: column;
+                margin-top: 4px;
+
+                .moveBtn {
+                    // margin-top: -8px;
+                    border: transparent;
+                    background-color: transparent;
+
+                    .fontIcon {
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lessonsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 16px;
+    // padding: 8px;
+    border-radius: 8px;
+    max-height: 180px;
+
+    .topContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        margin-left: 8px;
+        margin-top: 8px;
+
+        .topTitle {
+            margin-bottom: 8px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .topTitleBtn {
+            border: transparent;
+            border-radius: 4px;
+            margin-right: 12px;
+            background-color: rgba(198, 119, 252, 1);
+            color: rgba(255, 255, 255, 1);
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            .addLessonLink {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.landingpg {
+    background-image: url(../../assets/images/bg-landingpg.png);
+    background-size: cover;
+    aspect-ratio: 7/5;
+    color: #ffff;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.navleft,
+.navright {
+    display: flex;
+}
+
+.home {
+    margin-top: 15px;
+}
+
+.logowhite {
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 94px;
+    height: 22.75px;
+    margin-top: 15px;
+}
+
+.content {
+    width: 30vw;
+    margin-left: 83px;
+    margin-top: -50px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.slogan {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.intro {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bstudy {
+    background-color: #4e6fb8;
+    border: none;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 100px;
+    transition: color 0.5s ease;
+    color: #ffff;
+}
+
+.bregister {
+    background: #2e2847;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    width: 90px;
+    transition: color 0.5s ease;
+    color: #ffff;
+}
+
+.bstudy:hover,
+.bregister:hover {
+    color: #c1a781;
+    cursor: pointer;
+}
+
+.advantages {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

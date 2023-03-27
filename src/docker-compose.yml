@@ -1,0 +1,126 @@
+version: "3.9"
+
+services:
+  web.user:
+    image: coursenest-webuser
+    container_name: WEB-User
+    build:
+      context: .
+      dockerfile: Web/user-app-react/Dockerfile
+    networks:
+      - frontend
+    profiles: ["frontend"]
+
+  web.admin:
+    image: coursenest-webadmin
+    container_name: WEB-Admin
+    build:
+      context: .
+      dockerfile: Web/admin-app-react/Dockerfile
+    networks:
+      - frontend
+    profiles: ["frontend"]
+
+  gatewayapi:
+    image: coursenest-gatewayapi
+    container_name: GatewayAPI
+    build:
+      context: .
+      dockerfile: GatewayAPI/Dockerfile
+    networks:
+      - frontend
+      - backend
+    profiles: ["backend"]
+
+  authentication.api:
+    image: coursenest-authenticationapi
+    container_name: API-Authentication
+    build:
+      context: .
+      dockerfile: Services/Authentication/Authentication.API/Dockerfile
+    networks:
+      - backend
+    depends_on:
+      - database
+      - messagebus
+    profiles: ["backend"]
+
+  identity.api:
+    image: coursenest-identityapi
+    container_name: API-Identity
+    build:
+      context: .
+      dockerfile: Services/Identity/Identity.API/Dockerfile
+    networks:
+      - backend
+    depends_on:
+      - database
+      - messagebus
+    profiles: ["backend"]
+
+  library.api:
+    image: coursenest-libraryapi
+    container_name: API-Library
+    build:
+      context: .
+      dockerfile: Services/Library/Library.API/Dockerfile
+    networks:
+      - backend
+    depends_on:
+      - database
+      - messagebus
+    profiles: ["backend"]
+
+  payment.api:
+    image: coursenest-paymentapi
+    container_name: API-Payment
+    build:
+      context: .
+      dockerfile: Services/Payment/Payment.API/Dockerfile
+    networks:
+      - backend
+    depends_on:
+      - messagebus
+    profiles: ["backend"]
+
+  userdata.api:
+    image: coursenest-userdataapi
+    container_name: API-Userdata
+    build:
+      context: .
+      dockerfile: Services/UserData/UserData.API/Dockerfile
+    networks:
+      - backend
+    depends_on:
+      - database
+      - messagebus
+    profiles: ["backend"]
+
+  database:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: Database
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Express
+    networks:
+      - backend
+    profiles: ["backend"]
+
+  messagebus:
+    image: masstransit/rabbitmq
+    container_name: MessageBus
+    networks:
+      - backend
+    profiles: ["backend"]
+
+  reverseproxy:
+    image: caddy:2.6.2-alpine
+    container_name: ReverseProxy
+    networks:
+      - frontend
+      - backend
+    profiles: ["reverseproxy"]
+
+networks:
+  frontend:
+  backend:

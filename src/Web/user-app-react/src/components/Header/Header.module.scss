@@ -1,0 +1,118 @@
+.container {
+    justify-content: space-between;
+    height: 50px;
+    display: flex;
+    padding-top: 15px;
+    padding-left: 30px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+
+    .leftHeader {
+        align-items: center;
+        gap: 30px;
+        display: flex;
+
+        .dropdownMenu {
+            position: relative;
+
+            .dropdownMenuListItem {
+                position: absolute;
+                display: flex;
+                height: 250px;
+                background-color: rgba(255, 255, 255, 0.9);
+                backdrop-filter: blur(21px);
+
+                .dropdownListCate {
+                    width: 230px;
+                    padding: 24px;
+                    overflow-y: scroll;
+                    border: 1px solid rgb(221, 204, 233);
+
+                    .dropdownItemCate {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .dropdownItemCate:hover {
+                        color: #c677fc;
+                        cursor: pointer;
+                    }
+                }
+
+                .dropdownListItemSub {
+                    width: 230px;
+                    padding: 24px;
+                    overflow-y: scroll;
+                    border: 1px solid rgb(221, 204, 233);
+
+                    .dropdownItemSubCate {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .dropdownItemSubCate:hover {
+                        color: #c677fc;
+                        cursor: pointer;
+                    }
+                }
+
+                .listTopics {
+                    width: 230px;
+                    padding: 24px;
+                    overflow-y: scroll;
+                    border: 1px solid rgb(221, 204, 233);
+
+                    .topic {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .topic:hover {
+                        color: #c677fc;
+                        cursor: pointer;
+                    }
+                }
+                .listTopics::-webkit-scrollbar {
+                    display: none;
+                }
+                .dropdownListItemSub::-webkit-scrollbar {
+                    display: none;
+                }
+                .dropdownListCate::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+
+        .textDecoration {
+            text-decoration: none;
+            color: #262626;
+            transition: color 0.8s ease;
+        }
+        .textDecoration:hover {
+            color: #c677fc;
+            cursor: pointer;
+        }
+    }
+
+    .rightHeader {
+        display: flex;
+        gap: 15px;
+        .searchInput {
+            margin-top: 13px;
+        }
+        .instructorAction,
+        .publisherEditIcon {
+            margin-top: 13px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    }
+}

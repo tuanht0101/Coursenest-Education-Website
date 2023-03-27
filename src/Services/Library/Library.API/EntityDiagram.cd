@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Library.API.Infrastructure.Entities.Category" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAgAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Choice" Collapsed="true">
+    <Position X="18.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAgAAAAAAAAAAAAAAAAAAAAAEAAIAAAQAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Choice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Course" Collapsed="true">
+    <Position X="20" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAIgAEEAAgAQAAACAAAAAQQCAAAQgCAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.CourseCover" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAgAAIAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\CourseCover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Exam">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Exam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Lesson" Collapsed="true">
+    <Position X="18.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEEAAAAAAAgAEAABIAAAABAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Lesson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Material" Collapsed="true">
+    <Position X="14.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Material.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Question" Collapsed="true">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAAgAAABAAAAAAAAAAAAABAAAAAAAQAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Rating" Collapsed="true">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAAAgAAAAAAAIAAAAgAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Rating.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Subcategory" Collapsed="true">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAgAAAAAAAAAAAAAAAAIAAAAAACAACAA=</HashCode>
+      <FileName>Infrastructure\Entities\Subcategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Topic" Collapsed="true">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAACAAAAAAoAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Topic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Library.API.Infrastructure.Entities.Unit">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAEQABAAACABAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

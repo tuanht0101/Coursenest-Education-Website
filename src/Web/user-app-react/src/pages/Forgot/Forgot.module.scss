@@ -1,0 +1,140 @@
+.wrapper {
+    display: flex;
+    background-image: url('../../assets/images/forgot-background-2.png');
+    background-color: #c677fc;
+    width: 100vw;
+    height: 100vh;
+
+    .forgot-form-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 60px;
+
+        background-color: white;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+
+        .forgot-form {
+            width: 800px;
+            margin: 34px 46px 0px;
+
+            .form-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #a56bff;
+
+                h1 {
+                    font-size: 36px;
+                    font-weight: 800;
+                }
+
+                p {
+                    font-size: 36px;
+                    font-weight: 400;
+                    margin-top: -16px;
+                }
+            }
+
+            .email-fill-form {
+                display: flex;
+                flex-direction: column;
+
+                .email-fill {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 16px;
+
+                    label {
+                        color: #8c8c8c;
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-bottom: 8px;
+                    }
+
+                    .form-message {
+                        display: block;
+                        color: red;
+                        margin-bottom: 8px;
+                    }
+
+                    .registerInput {
+                        padding: 14px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        border: 2px solid #8c8c8c;
+                        border-radius: 6px;
+                        opacity: 0.8;
+                    }
+                }
+
+                .passAnnoucement {
+                    color: rgba($color: #59e765, $alpha: 1);
+                    align-self: center;
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                    font-size: 24px;
+                }
+
+                .loginError {
+                    color: red;
+                    align-self: center;
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                }
+
+                .confirmButton {
+                    width: 100%;
+                    cursor: pointer;
+                    background-color: #c677fc;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    margin-top: 12px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            .member-yet {
+                display: flex;
+                flex-direction: row;
+                color: #8c8c8c;
+                font-size: 20px;
+                margin-top: 8px;
+
+                .signInUp-btn {
+                    margin-left: 8px;
+                    margin-top: 0;
+
+                    .login-link {
+                        text-decoration: none;
+                        color: #c677fc;
+                    }
+
+                    .signUp-link {
+                        text-decoration: none;
+                        color: #ff8f8f;
+                    }
+                }
+            }
+
+            .sponsor-info-container {
+                display: flex;
+                justify-content: space-between;
+
+                .sponsor-info {
+                    color: #c677fc;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

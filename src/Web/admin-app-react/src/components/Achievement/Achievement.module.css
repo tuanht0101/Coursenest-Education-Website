@@ -1,0 +1,19 @@
+.achievement {
+    border: 1px solid #C677FC;
+    backdrop-filter: blur(21px);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    width: 360px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 16px;
+}
+.achievementTitle {
+    margin-bottom: 0px;
+    margin-top: 15px;
+}   
+.achievementCreated{
+    color: #8C8C8C;
+}

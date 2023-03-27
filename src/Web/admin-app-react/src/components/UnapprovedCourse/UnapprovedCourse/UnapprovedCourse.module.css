@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    align-items: flex-start;
+}
+
+.sideBar,
+.courseInfo {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 16px;
+    backdrop-filter: blur(21px);
+    border-radius: 8px;
+}
+
+.sideBar {
+    min-width: 280px;
+}
+
+.courseInfo {
+    text-align: justify;
+    flex-grow: 1;
+}

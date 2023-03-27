@@ -1,0 +1,21 @@
+.course-list {
+    list-style-type: none;
+
+    .course-item {
+        display: flex;
+        justify-content: space-between;
+        // margin-top: 10px;
+
+        .deleteCourseButton {
+            cursor: pointer;
+            width: 30px;
+            font-size: 24px;
+            background-color: transparent;
+            border: none;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}

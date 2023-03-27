@@ -1,0 +1,29 @@
+.confirmBtnsDiv {
+    float: right;
+
+    .cancelBtn {
+        margin-right: 8px;
+        padding: 4px 12px;
+        color: rgba(255, 37, 40, 1);
+        background-color: white;
+        border: 1px solid rgba(255, 37, 40, 1);
+        border-radius: 4px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .confirmBtn {
+        margin-right: 8px;
+        padding: 4px 12px;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(198, 119, 252, 1);
+        border: transparent;
+        border-radius: 4px;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

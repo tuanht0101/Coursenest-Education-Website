@@ -1,0 +1,97 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .followingContainer {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        margin-left: 16px;
+        width: 780px;
+        padding-bottom: 8px;
+
+        .mainTab {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28.8px;
+            margin-top: 16px;
+            margin-left: 16px;
+        }
+    }
+    .headlessTippy {
+        max-height: 900px;
+    }
+
+    .searchContainer {
+        margin-left: 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        height: fit-content;
+
+        .searchWrapper {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+            width: 670px;
+
+            .searchTitle {
+                margin: 16px 0px 8px 0px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28.8px;
+            }
+
+            .searchDiv {
+                display: flex;
+                flex-direction: row;
+                height: 48px;
+                border: 2px solid transparent;
+                border-radius: 6px;
+                align-items: center;
+                margin-top: 8px;
+                background-color: rgba(255, 255, 255, 0.5);
+
+                .searchIcon {
+                    padding-left: 8px;
+                    padding-right: 4px;
+                }
+
+                .searchInput {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-top: 4px;
+                    border-radius: 6px;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    border-right: 0px;
+                    background-color: transparent;
+                    flex: 1;
+                    width: 100%;
+                    border: none;
+                }
+
+                .dropDownButton {
+                    cursor: pointer;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    border-left: 0px;
+                    border: none;
+                    background-color: transparent;
+
+                    .dropDownImg {
+                        height: 10px;
+                    }
+                }
+            }
+        }
+
+        .search-result {
+            width: 670px;
+        }
+
+        .popper-result {
+            height: fit-content;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.container {
+    .bdropdown {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-right: 24px;
+        margin-left: 30px;
+        justify-content: space-around;
+        padding-top: 10px;
+        margin-bottom: 10px;
+
+        .avatarImg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dropDownImg {
+            width: 15px;
+            height: 10px;
+        }
+    }
+    
+    .bdropdown {
+        transition: color 0.5s ease;
+    }
+    
+    .bdropdown:hover {
+        cursor: pointer;
+        color: #c1a781;
+    }
+
+    .ddcontent {
+        background-color: #4e6fb8;
+        width: 120px;
+        margin-left: 35px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .dditem p {
+        transition: color 0.5s ease;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    .dditem:hover p {
+        color: #c1a781;
+        cursor: pointer;
+    }
+    
+}

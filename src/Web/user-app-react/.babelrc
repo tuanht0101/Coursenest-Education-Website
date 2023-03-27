@@ -1,0 +1,13 @@
+// Cấu hình import file
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "~": "./src"
+                }
+            }
+        ]
+    ]
+}

@@ -1,0 +1,99 @@
+.wrapper {
+    .coursesPagesContainer {
+        background: rgba(255, 255, 255, 0.3);
+        width: 360px;
+        height: 181px;
+        border-radius: 8px;
+        margin-bottom: 16px;
+
+        .tabTitle {
+            font-family: 'Inter';
+            padding-top: 16px;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29.05px;
+        }
+
+        .tabsDiv {
+            padding: 0px 16px 16px 16px;
+            width: fit-content;
+
+            .activeTab {
+                text-decoration: none;
+                font-weight: 600;
+                color: rgba(38, 38, 38, 1);
+            }
+
+            .noneActiveTab {
+                font-weight: 400;
+                text-decoration: none;
+                color: rgba(38, 38, 38, 1);
+            }
+
+            .subTab {
+                font-family: 'Inter';
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    .notiTabContainer {
+        background: rgba(255, 255, 255, 0.7);
+        width: 360px;
+        height: 88px;
+        border-radius: 8px;
+
+        .topNotification {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .tabTitle {
+                font-family: 'Inter';
+                // padding-top: -8px;
+                margin-top: 16px;
+                padding-left: 16px;
+                padding-right: 16px;
+                font-size: 24px;
+                font-weight: 500;
+                // line-height: 29.05px;
+            }
+
+            .rightTopNoti {
+                margin-top: -8px;
+
+                .notiAmount {
+                    margin-right: 4px;
+                    border-radius: 50%;
+                    height: fit-content;
+                    background-color: rgba(198, 119, 252, 0.3);
+                    border-color: transparent;
+                    color: rgba(198, 119, 252, 1);
+                }
+
+                .deleteCourseButton {
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .messageNoti {
+            font-family: 'Inter';
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: -16px;
+            color: rgba(140, 140, 140, 1);
+            padding-left: 16px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: calc(100% - 32px);
+    border-radius: 8px;
+    margin-left: 16px;
+    // margin-right: 32px;
+    margin-bottom: 20px;
+    padding-top: 13px;
+
+    .tabTitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 12px;
+        margin-bottom: 9px;
+        // margin-top: 13px;
+    }
+
+    .itemsContainer {
+        margin-left: -20px;
+        .listItems {
+            .itemContainer {
+                margin-bottom: -8px;
+                .item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-self: center;
+                    color: rgba(140, 140, 140, 1);
+
+                    .rightItem {
+                        display: flex;
+
+                        .deleteButton {
+                            border: none;
+                            background-color: transparent;
+                            margin-top: -12px;
+                            margin-left: 22px;
+
+                            .delete {
+                                // justify-self: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

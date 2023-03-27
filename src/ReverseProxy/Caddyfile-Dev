@@ -1,0 +1,13 @@
+{
+    auto_https disable_redirects
+}
+
+http://localhost:20000 {
+    reverse_proxy web.user:5000
+    reverse_proxy /api/* gatewayapi:80
+}
+
+http://localhost:20001 {
+    reverse_proxy web.admin:5000
+    reverse_proxy /api/* gatewayapi:80
+}

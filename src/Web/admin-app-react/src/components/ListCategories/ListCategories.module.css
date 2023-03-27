@@ -1,0 +1,93 @@
+.container {
+    padding: 30px;
+}
+
+.header {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttonAdd {
+    background: #7B61FF;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.cateBox {
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 5px;
+    /* backdrop-filter: blur(21px); */
+    /* background-color: rgba(227, 215, 227, 0.613); */
+}
+
+.cateHeader {
+    display: flex;
+    justify-content: space-between;
+}
+/* 
+.buttonEdit {
+    color: rgba(140, 140, 140, 1);
+    cursor: pointer;
+} */
+
+.subBox {
+    padding: 20px;
+    margin-top: 20px;
+    background: rgba(211, 199, 199, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+}
+
+.subBoxHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.devider {
+    border: 2px solid rgb(1, 170, 1);
+    border-radius: 5px;
+}
+
+.subBoxContent {
+    padding-left: 20px;
+}
+
+.subcateContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.listTopics {
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.deviderTopic{
+    border: 2px solid rgb(2, 56, 2);
+    border-radius: 5px;
+}
+
+.topic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topicActions {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}

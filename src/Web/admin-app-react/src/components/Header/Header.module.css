@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.navLeft {
+    padding: 20px 0px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+}
+
+.navLink:hover,
+.navRight:hover {
+    color: #C1A781;
+}
+
+.navRight {
+    color: white;
+    padding: 20px 40px;
+}
+
+.active {
+    color:tomato;
+}

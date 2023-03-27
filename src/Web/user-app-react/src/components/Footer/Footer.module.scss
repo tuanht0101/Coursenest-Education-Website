@@ -1,0 +1,25 @@
+.footer {
+    background-color: #292d32;
+    color: #ffff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    .footercol {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footercol3 {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    .footercol2 {
+        margin-left: 40px;
+        margin-right: 48px;
+    }
+
+    .chplayimg {
+        margin-bottom: 2px;
+    }
+}

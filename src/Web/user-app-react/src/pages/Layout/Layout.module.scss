@@ -1,0 +1,39 @@
+.container {
+    color: #000000;
+    background-image: url('../../assets/images/home-bg.png');
+    background-size: cover;
+    aspect-ratio: 7/5;
+    position: relative;
+
+    .header {
+        z-index: 2 !important;
+    }
+
+    .profile {
+        background-image: url('../../assets/images/profile-bg.png');
+        background-size: cover;
+        aspect-ratio: 7/5;
+    }
+
+    .topics {
+        background-image: url('../../assets/images/topic-bg.png');
+        background-size: cover;
+        aspect-ratio: 7/5;
+    }
+
+    .courses,
+    .my-courses,
+    .enrolled-course {
+        background-image: url('../../assets/images/courses-bg.png');
+    }
+
+    .instructor,
+    .publisher {
+        background-image: url('../../assets/images/instructor-bg.png');
+    }
+
+    .outlet {
+        margin: 0px 30px 50px 30px;
+        min-height: 100vh;
+    }
+}

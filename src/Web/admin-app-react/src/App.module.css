@@ -1,0 +1,16 @@
+.categories {
+    background-image: url(./assets/cateBg.png);
+    /* background-size: cover;
+    aspect-ratio: 7/5; */
+}
+
+.profile {
+    background-image: url(./assets/profileBg.png);
+    background-size: cover;
+    aspect-ratio: 7/5;
+}
+.courses {
+    background-image: url(./assets/listCourseBg.png);
+    background-size: cover;
+    aspect-ratio: 7/5;
+}

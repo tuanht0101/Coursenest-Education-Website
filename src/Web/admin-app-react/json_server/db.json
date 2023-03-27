@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "fullname": "Ngo Thi Hoa",
+      "username": "hoa",
+      "email": "hoa@gmail.com",
+      "adderss": "Hanoi",
+      "dateOfBirth": "27-11-2000",
+      "phoneNumber": "0936073622",
+      "aboutMe": "hi im linh hihi",
+      "gender": "female",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg",
+      "roles": [
+        "admin",
+        "student"
+      ]
+    },
+    {
+      "userId": 2,
+      "fullname": "Ngo Thi Linh",
+      "username": "linh",
+      "email": "ngothilinh12915@gmail.com",
+      "adderss": "Hanoi",
+      "dateOfBirth": "27-11-2000",
+      "phoneNumber": "0936073622",
+      "aboutMe": "hi im linh hihi",
+      "gender": "female",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg",
+      "roles": [
+        "admin",
+        "publisher"
+      ]
+    },
+    {
+      "userId": 3,
+      "fullname": "Nguyen Thi Linh",
+      "username": "linhnguyen",
+      "email": "nguyenlinh@gmail.com",
+      "adderss": "Hanoi",
+      "dateOfBirth": "27-11-2000",
+      "phoneNumber": "0936073622",
+      "aboutMe": "hi im linh hihi",
+      "gender": "female",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg",
+      "roles": [
+        "student"
+      ]
+    },
+    {
+      "userId": 4,
+      "fullname": "Ngo Thi Mai",
+      "username": "mai",
+      "email": "mai@gmail.com",
+      "adderss": "Hanoi",
+      "dateOfBirth": "27-11-2000",
+      "phoneNumber": "0936073622",
+      "aboutMe": "hi im linh hihi",
+      "gender": "female",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg",
+      "roles": [
+        "student"
+      ]
+    },
+    {
+      "userId": 5,
+      "fullname": "Ngo Phu Thai",
+      "username": "corn2007",
+      "email": "corn2007@gmail.com",
+      "adderss": "Hanoi",
+      "dateOfBirth": "20-07-2000",
+      "phoneNumber": "0936073622",
+      "aboutMe": "hi im thai hihi",
+      "gender": "female",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg",
+      "roles": [
+        "student"
+      ]
+    },
+    {
+      "userId": 6,
+      "fullname": "Nguyen Thi Phuong",
+      "username": "ngolinh",
+      "email": "ngothilinh12915@gmail.com",
+      "adderss": "Hanoi",
+      "dateOfBirth": "27-11-2000",
+      "phoneNumber": "0936073622",
+      "aboutMe": "hi im linh hihi",
+      "gender": "female",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg",
+      "roles": [
+        "student"
+      ]
+    },
+    {
+      "userId": 7,
+      "fullname": "Nguyen Thi Hong",
+      "username": "ngolinh",
+      "email": "ngothilinh12915@gmail.com",
+      "adderss": "Hanoi",
+      "dateOfBirth": "27-11-2000",
+      "phoneNumber": "0936073622",
+      "aboutMe": "hi im linh hihi",
+      "gender": "female",
+      "avatar": "https://reqres.in/img/faces/1-image.jpg",
+      "roles": [
+        "student"
+      ]
+    },
+    {
+      "userId": 8,
+      "fullname": "Tran Hoang Minh Tuan",
+      "username": "tuantran",
+      "email": "tuantran@gmail.com",
+      "adderss": "Hanoi",
+      "dateOfBirth": "27-11-2000",
+      "phoneNumber": "0936073622",
+      "aboutMe": "hi im linh hihi",
+      "gender": "female",
+      "avatar": "https://reqres.in/img/faces/2-image.jpg",
+      "roles": [
+        "student"
+      ]
+    }
+  ]
+}

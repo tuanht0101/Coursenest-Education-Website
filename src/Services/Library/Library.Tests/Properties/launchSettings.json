@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Library.Tests": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Connection__Database": "a",
+        "Connection__MessageBus": "a"
+      },
+      "applicationUrl": "https://localhost:56916;http://localhost:56917"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+    // border-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    width: 100%;
+    margin-left: 16px;
+    height: 100%;
+
+    .title {
+        margin-left: 42px;
+        font-size: 24px;
+    }
+
+    .table {
+        min-width: 650px;
+    }
+
+    .backBtn {
+        margin-right: 10px;
+    }
+}

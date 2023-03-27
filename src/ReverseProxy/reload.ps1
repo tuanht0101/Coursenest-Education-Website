@@ -1,0 +1,1 @@
+docker exec ReverseProxy caddy reload --config /etc/caddy/Caddyfile

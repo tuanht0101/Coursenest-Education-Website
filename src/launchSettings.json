@@ -1,0 +1,66 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "authentication.api": "StartDebugging",
+        "database": "StartWithoutDebugging",
+        "messagebus": "StartWithoutDebugging",
+        "identity.api": "StartDebugging",
+        "library.api": "StartDebugging",
+        "payment.api": "StartDebugging",
+        "userdata.api": "StartDebugging",
+        "gatewayapi": "StartDebugging"
+      }
+    },
+    "Authentication.API": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "authentication.api",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "serviceActions": {
+        "authentication.api": "StartDebugging",
+        "database": "StartWithoutDebugging",
+        "identity.api": "StartDebugging",
+        "library.api": "DoNotStart",
+        "messagebus": "StartWithoutDebugging",
+        "payment.api": "DoNotStart",
+        "userdata.api": "DoNotStart",
+        "gatewayapi": "StartDebugging"
+      }
+    },
+    "Library.API": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "library.api",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "serviceActions": {
+        "authentication.api": "StartDebugging",
+        "database": "StartWithoutDebugging",
+        "identity.api": "StartDebugging",
+        "library.api": "StartDebugging",
+        "messagebus": "StartWithoutDebugging",
+        "payment.api": "DoNotStart",
+        "userdata.api": "DoNotStart",
+        "gatewayapi": "StartDebugging"
+      }
+    },
+    "Common Services": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "authentication.api": "DoNotStart",
+        "database": "StartWithoutDebugging",
+        "identity.api": "DoNotStart",
+        "library.api": "DoNotStart",
+        "messagebus": "StartWithoutDebugging",
+        "payment.api": "DoNotStart",
+        "userdata.api": "DoNotStart",
+        "gatewayapi": "StartDebugging"
+      }
+    }
+  }
+}

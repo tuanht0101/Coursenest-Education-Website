@@ -1,0 +1,79 @@
+version: "3.9"
+name: coursenest
+
+services:
+  web.user:
+    ports:
+      - "21001:5000"
+
+  web.admin:
+    ports:
+      - "21002:5000"
+
+  gatewayapi:
+    ports:
+      - "21000:80"
+
+  authentication.api:
+    environment:
+      - Database__ConnectionString=Server=database;Database=AuthenticationDB;User Id=sa;Password=Pass@word;TrustServerCertificate=True;
+      - MassTransit__Host=messagebus
+      - Jwt__SigningKey=1234567890123456
+      - Jwt__Issuer=http://authentication.api
+      - Jwt__AccessTokenLifetime=60
+      - Jwt__RefreshTokenLifetime=180
+      - SwaggerUI=True
+
+  identity.api:
+    environment:
+      - Database__ConnectionString=Server=database;Database=IdentityDB;User Id=sa;Password=Pass@word;TrustServerCertificate=True;
+      - MassTransit__Host=messagebus
+      - Jwt__SigningKey=1234567890123456
+      - Jwt__Issuer=http://authentication.api
+      - SwaggerUI=True
+
+  library.api:
+    environment:
+      - Database__ConnectionString=Server=database;Database=LibraryDB;User Id=sa;Password=Pass@word;TrustServerCertificate=True;
+      - MassTransit__Host=messagebus
+      - Jwt__SigningKey=1234567890123456
+      - Jwt__Issuer=http://authentication.api
+      - SwaggerUI=True
+
+  payment.api:
+    environment:
+      - MassTransit__Host=messagebus
+      - Jwt__SigningKey=1234567890123456
+      - Jwt__Issuer=http://authentication.api
+      - SwaggerUI=True
+
+  userdata.api:
+    environment:
+      - Database__ConnectionString=Server=database;Database=UserDataDB;User Id=sa;Password=Pass@word;TrustServerCertificate=True;
+      - MassTransit__Host=messagebus
+      - Jwt__SigningKey=1234567890123456
+      - Jwt__Issuer=http://authentication.api
+      - SwaggerUI=True
+
+  database:
+    environment:
+      - MSSQL_SA_PASSWORD=Pass@word
+    volumes:
+      - database:/var/opt/mssql
+    ports:
+      - "1433:1433"
+
+  messagebus:
+    volumes:
+      - messagebus:/var/lib/rabbitmq
+
+  reverseproxy:
+    volumes:
+      - ./ReverseProxy/Caddyfile-Prod:/etc/caddy/Caddyfile
+    ports:
+      - "20000:20000"
+      - "20001:20001"
+
+volumes:
+  database:
+  messagebus:

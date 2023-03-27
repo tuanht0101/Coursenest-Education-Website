@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Authentication.API.Infrastructure.Entities.Credential">
+    <Position X="4" Y="1" Width="2.75" />
+    <AssociationLine Name="RefreshTokens" Type="Authentication.API.Infrastructure.Entities.RefreshToken">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.225" Y="0.206" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Roles" Type="Authentication.API.Infrastructure.Entities.Role">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.193" Y="0.529" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAQAAAAgAAgAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Credential.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="RefreshTokens" />
+      <Property Name="Roles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Authentication.API.Infrastructure.Entities.RefreshToken">
+    <Position X="9.75" Y="1" Width="2" />
+    <Members>
+      <Property Name="Credential" Hidden="true" />
+      <Property Name="CredentialUserId" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAIAAAAAAAAAAAIBAAA=</HashCode>
+      <FileName>Infrastructure\Entities\RefreshToken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Authentication.API.Infrastructure.Entities.Role">
+    <Position X="4" Y="3.75" Width="2" />
+    <Members>
+      <Property Name="Credential" Hidden="true" />
+      <Property Name="CredentialUserId" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAIAAAAAAQAAAAIAAAA=</HashCode>
+      <FileName>Infrastructure\Entities\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

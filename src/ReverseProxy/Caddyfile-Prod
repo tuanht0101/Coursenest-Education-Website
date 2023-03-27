@@ -1,0 +1,9 @@
+:20000 {
+    reverse_proxy :21001
+    reverse_proxy /api/* :21000
+}
+
+:20001 {
+    reverse_proxy :21002
+    reverse_proxy /api/* :21000
+}

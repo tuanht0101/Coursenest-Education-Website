@@ -1,0 +1,90 @@
+.container {
+    // background-image: url('../../assets/images/home-bg.png');
+    // background-size: cover;
+    // aspect-ratio: 7/5;
+
+    .heading {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .slogan {
+        text-align: end;
+        width: 45vw;
+        font-weight: 700;
+        letter-spacing: 12px;
+
+        .title {
+            font-size: 100px;
+            line-height: 100px;
+        }
+
+        .subTitle {
+            font-size: 30px;
+        }
+    }
+
+    .content {
+        margin-top: 50px;
+        padding-left: 100px;
+        width: 40vw;
+
+        .links {
+            margin-top: 20px;
+            .bstudy {
+                background-color: #4e6fb8;
+                border: none;
+                margin-right: 24px;
+                margin-bottom: 20px;
+                padding: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+                width: 100px;
+                transition: color 0.5s ease;
+                color: #ffff;
+            }
+            
+            .bregister {
+                background: #2e2847;
+                border: none;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+                padding: 10px;
+                width: 90px;
+                transition: color 0.5s ease;
+                color: #ffff;
+            }
+            
+            .bstudy:hover,
+            .bregister:hover {
+                color: #c1a781;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .listInterestedTopic {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 0.8rem;
+
+        .interestedTopic {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 4.5rem;
+            padding: 0.8rem 1.6rem;
+            background: rgba(240, 235, 235, 0.3);
+            box-shadow: 0 1rem 1rem hsl(0 0% 0% / 10%);
+            backdrop-filter: blur(21px);
+            border-radius: 8px;
+            word-break: break-word;
+        }
+
+        .interestedTopic:hover {
+            box-shadow: 0 1rem 1rem hsl(0 0% 0% / 20%);
+            cursor: pointer;
+        }
+    }
+}

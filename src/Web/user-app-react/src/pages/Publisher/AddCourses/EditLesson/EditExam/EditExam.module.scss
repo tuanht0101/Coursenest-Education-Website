@@ -1,0 +1,80 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 16px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    padding-top: 23px;
+    padding-left: 40px;
+    padding-right: 32px;
+
+    .topContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        .examTitle {
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba(38, 38, 38, 1);
+        }
+
+        .timeLimit {
+            font-weight: 500;
+            color: rgba(38, 38, 38, 1);
+        }
+    }
+
+    .examDesc {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(38, 38, 38, 1);
+        margin-bottom: 8px;
+    }
+
+    .bodyContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-top: 16px;
+        padding: 8px;
+        border-radius: 8px;
+        max-height: 400px;
+        margin-bottom: 8px;
+
+        .topBody {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            // margin-left: 8px;
+            margin-top: 8px;
+
+            .bodyTitle {
+                margin-bottom: 8px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .addQuestionBtn {
+                border: transparent;
+                border-radius: 4px;
+                // margin-right: 12px;
+                background-color: rgba(198, 119, 252, 1);
+                color: rgba(255, 255, 255, 1);
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+                .addLessonLink {
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}

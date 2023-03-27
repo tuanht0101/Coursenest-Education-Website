@@ -1,0 +1,248 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../../assets/images/sign-up-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .register-sidebar {
+        min-width: 600px;
+        max-width: 600px;
+        background-color: #c677fc;
+        flex-grow: 1;
+        border-radius: 24px;
+        color: #ffffff;
+        margin: 24px 0px 24px 24px;
+        opacity: 0.8;
+        padding-left: 34px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+
+            margin-top: 45px;
+            // margin-left: 34px;
+            order: 0;
+        }
+
+        .sidebarTitle {
+            margin-top: 68px;
+            font-size: 64px;
+            font-weight: 900;
+        }
+
+        .sidebarBody {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .reviewList {
+            margin-top: 58px;
+        }
+    }
+
+    .register {
+        height: calc(100vh - 50px);
+        width: max-content;
+        flex-grow: 2;
+        padding: 36px 59px 132px 84px;
+
+        .signUpDiv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .forgot {
+            display: block;
+            margin-bottom: 10px;
+
+            .forgot-btn {
+                color: #c677fc !important;
+            }
+        }
+
+        .regisInfoTitle {
+            display: flex;
+            flex-direction: column;
+
+            left: 0;
+
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+
+                color: #010101;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+            .registerTitle {
+                font-style: normal;
+                font-weight: 900;
+                font-size: 48px;
+                line-height: 58px;
+                letter-spacing: 0.03em;
+
+                color: #010101;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+
+            .member-yet {
+                display: flex;
+
+                .sign-in {
+                    text-decoration: none;
+                    margin-left: 8px;
+                    margin-top: 0px;
+                    // color: #c677fc !important;
+
+                    .sign-in-btn {
+                        color: #c677fc !important;
+                    }
+                }
+            }
+        }
+
+        .registerForm {
+            margin-top: 20px;
+            margin-bottom: 24px;
+            padding-bottom: 36px;
+            display: flex;
+            position: relative;
+            // color: #8c8c8c;
+            color: #8c8c8c;
+            flex-flow: column wrap;
+
+            .inputContainer {
+                display: flex;
+                flex-flow: column;
+                justify-self: flex-start;
+                width: 100%;
+
+                .inputTitle {
+                    margin: 16px 0px 6px 0px;
+                }
+
+                .form-message {
+                    display: block;
+                    margin-bottom: 8px;
+                    color: red;
+                }
+
+                .registerInput {
+                    // padding: 10px;
+                    height: 48px;
+                    padding-left: 10px;
+                    border: 2px solid #8c8c8c;
+                    border-radius: 6px;
+                    opacity: 0.7;
+                }
+
+                .passwordInput {
+                    display: flex;
+                    flex-direction: row;
+                    height: 48px;
+                    border: 2px solid #8c8c8c;
+                    border-radius: 6px;
+                    opacity: 0.6;
+
+                    .passwordEnter {
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                        border-right: 0px;
+
+                        flex: 1;
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                    }
+
+                    .showButton {
+                        cursor: pointer;
+                        border-top-right-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                        border-left: 0px;
+                        border: none;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .nextPageButton {
+            right: 0;
+            bottom: 0;
+            width: fit-content;
+            position: absolute;
+            font-size: 20px;
+            font-weight: 500;
+            color: #c677fc;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+
+            .rightArrow {
+                padding-left: 8px;
+            }
+        }
+    }
+    .buttonsDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 16px;
+
+        .previousPageButton {
+            width: fit-content;
+            font-size: 20px;
+            font-weight: 500;
+            color: #c677fc;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+
+            .leftArrow {
+                padding-right: 8px;
+            }
+        }
+
+        .registerLoginButton {
+            width: fit-content;
+            cursor: pointer;
+            background-color: #c677fc;
+            border: none;
+            border-radius: 8px;
+            padding: 16px;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+
+            .link {
+                font-size: 20px;
+                font-weight: 500;
+                color: white;
+                text-decoration: none;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    *:focus {
+        outline: none;
+    }
+}
